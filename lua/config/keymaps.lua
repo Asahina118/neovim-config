@@ -23,3 +23,8 @@ vim.keymap.set("x", "<c-_>", "gc", { remap = true, desc = "Toggle comment select
 vim.keymap.set("i", "<c-/>", "<Esc>gcc`^i", { remap = true, desc = "Toggle comment line" })
 vim.keymap.set("i", "<c-_>", "<Esc>gcc`^i", { remap = true, desc = "Toggle comment line" })
 
+vim.keymap.set("n", "<S-Left>", "<C-w>h", { desc = "Move to left window" })
+vim.keymap.set("n", "<S-Right>", "<C-w>l", { desc = "Move to right window" })
+
+vim.keymap.set("n", "<S-PageUp>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "<S-PageDown>", "<cmd>bprev<cr>", { desc = "Previous buffer" })
